@@ -1,0 +1,15 @@
+header {
+    color: #7818cd;
+    text-align: center;
+
+}
+h3 {
+    scale: 2;
+}
+body{
+    background-color: rgba(211, 147, 147, 0.78);
+}
+footer{
+    color: #cd1818;
+    padding-top: 5em;
+}
