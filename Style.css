@@ -4,21 +4,24 @@ header {
     border: #131799 2px solid;
     border-bottom-left-radius: 99px;
     border-bottom-right-radius: 99px;
-    min-height: 4px;
+    min-height: 150px;
     margin-right: 400px;
     margin-left: 400px;
     padding: 5px;
     max-height: 200px;
+    min-width: 350px;
 }
 .Reasons{
     padding-left: 15px;
+    font-weight: normal;
 
 }
 #Last-page2{
     color: #131799;
 }
 .More-header{
-    scale: 2;
+    font-size: 25px;
+    min-width: 200px;
 }
 .too-small{
     scale: 250%;
@@ -33,6 +36,9 @@ img{
     min-height: 200px;
     min-width: 100px;
     max-height: 100px;
+}
+.list{
+    padding: 10px;
 }
 #list-1{
     border: #131799 2px solid;
@@ -58,7 +64,12 @@ h4{
 body{
     background-color: rgba(211, 147, 147, 0.78);
 }
-footer{
+
+.Links-footer{
     color: #131799;
     padding-top: 5em;
+    margin: 10px;
+}
+#img-page3{
+    margin: auto;
 }
