@@ -7,14 +7,17 @@ header {
     min-height: 150px;
     margin-right: 400px;
     margin-left: 400px;
-    padding: 5px;
+    padding: 10px;
     max-height: 200px;
     min-width: 350px;
+}
+#main-header{
+    background-color: #131799 !important;
 }
 .Reasons{
     padding-left: 15px;
     font-weight: normal;
-
+    color: white;
 }
 #Last-page2{
     color: #131799;
@@ -22,6 +25,7 @@ header {
 .More-header{
     font-size: 25px;
     min-width: 200px;
+    padding-top: 2px;
 }
 .too-small{
     scale: 250%;
@@ -30,6 +34,7 @@ header {
     font-size: large;
     padding: 15px;
     margin: 5px;
+    color: white;
 }
 img{
     max-width: 25%;
@@ -41,17 +46,14 @@ img{
     padding: 10px;
 }
 #list-1{
-    border: #131799 2px solid;
     padding: 10px;
     margin: 5px;
 }
 #list-2{
-    border: #131799 2px solid;
     padding: 10px;
     margin: 5px;
 }
 #list-3{
-    border: #131799 2px solid;
     padding: 10px;
     margin: 5px;
 }
@@ -63,13 +65,24 @@ h4{
 }
 body{
     background-color: rgba(211, 147, 147, 0.78);
+    color: white;
 }
 
 .Links-footer{
-    color: #131799;
+    color: #ffffff;
     padding-top: 5em;
     margin: 10px;
 }
 #img-page3{
     margin: auto;
+}  #background{
+    background-image: url("/Image/download (7).jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 3000px;
+}
+#body-background{
+    background-image: url("/Image/TenaciousDO2160623_(38_of_62)_Kyle_Gass.jpg");
+    background-attachment: scroll;
 }
