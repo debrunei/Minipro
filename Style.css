@@ -68,10 +68,13 @@ body{
     color: white;
 }
 
-.Links-footer{
+.Links-middle{
     color: #ffffff;
     padding-top: 5em;
     margin: 10px;
+}
+#Links-background{
+    background-color: #131799 !important;
 }
 #img-page3{
     margin: auto;
