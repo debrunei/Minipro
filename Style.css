@@ -1,3 +1,4 @@
+/* Header */
 header {
     color: #7818cd;
     text-align: center;
@@ -14,24 +15,27 @@ header {
 #main-header{
     background-color: #131799 !important;
 }
-.Reasons{
-    padding-left: 15px;
-    font-weight: normal;
-    color: white;
-}
-#Last-page2{
-    color: #131799;
-}
+
 .More-header{
     font-size: 25px;
     min-width: 200px;
     padding-top: 2px;
 }
+
+.Reasons{
+    padding-left: 15px;
+    font-weight: normal;
+    color: white;
+    border: #131799 2px solid;
+}
+#Last-page2{
+    color: #131799;
+}
 .too-small{
     scale: 250%;
 }
 #Song-list{
-    font-size: large;
+    font-size: x-large;
     padding: 15px;
     margin: 5px;
     color: white;
@@ -42,8 +46,26 @@ img{
     min-width: 100px;
     max-height: 100px;
 }
+/* Flex */
 .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 10px;
+}
+
+.Links-middle{
+    color: #ffffff;
+    padding-top: 5em;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 #list-1{
     padding: 10px;
@@ -68,17 +90,15 @@ body{
     color: white;
 }
 
-.Links-middle{
-    color: #ffffff;
-    padding-top: 5em;
-    margin: 10px;
-}
 #Links-background{
     background-color: #131799 !important;
 }
+/* Images */
 #img-page3{
     margin: auto;
-}  #background{
+}
+
+#background{
     background-image: url("/Image/download (7).jpg");
     background-position: right;
     background-repeat: no-repeat;
@@ -88,4 +108,25 @@ body{
 #body-background{
     background-image: url("/Image/TenaciousDO2160623_(38_of_62)_Kyle_Gass.jpg");
     background-attachment: scroll;
+}
+footer{
+    margin-top: 200px;
+}
+/* Floats */
+.left{
+    float: left;
+    border: #399926 2px solid;
+}
+.right {
+    float: right;
+    border: #399926 2px solid;
+}
+
+.clearfix{
+    content: "";
+    display: block;
+    clear: both;
+}
+.Image{
+    display: grid;
 }
