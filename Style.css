@@ -168,6 +168,25 @@ footer{
         radial-gradient(#6a5af9  0%, #b65ef1 45%, #ff7ac3 95%, transparent 70%);
 }
 /* Transitions and transforms */
-#num1:hover{
-    transform: translate(20px, -10px);
+.num1:hover{
+    transform: translate(0, -200px);
+    transition: 2s;
+    transition-timing-function: ease;
 }
+.num2:hover{
+    transform: scale(20);
+    transition: 2s;
+    transition-timing-function: ease;
+}
+.num3:hover{
+    transform: rotate(35deg);
+    transition: 1s, box-shadow 2s;
+    transition-timing-function: ease;
+}
+.num4:hover{
+    transform: skew(120deg);
+    transition: 2s, color ease;
+    transition-timing-function: ease;
+}
+/* Animations */
+
