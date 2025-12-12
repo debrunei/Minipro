@@ -190,3 +190,29 @@ footer{
 }
 /* Animations */
 
+@keyframes myAnimation {
+    0%   {background-color: #131799;}
+    25%  {background-color: #d314e1;}
+    50%  {background-color: #6015a6;}
+    100% {background-color: #0a2565;}
+}
+.Links-middle{
+    animation-name: myAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes HoverAnimation {
+    0%   {background-color: #e31313;}
+    25%  {background-color: #e707ef;}
+    50%  {background-color: #2f5bcc;}
+    100% {background-color: #1dedbd;}
+}
+.Reasons:hover{
+    animation-name: HoverAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: translateY(-10px);
+    transition: 2s;
+    animation-delay: 1s;
+}
