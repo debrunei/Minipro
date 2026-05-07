@@ -32,9 +32,9 @@ async function load() {
     });
     document.querySelector("#item").innerHTML = html;
 }
-
+/*Create*/
 async function create(){
-    const { error } = await db.from('responsepage').insert([{ message: "Why"}]);
+    const { error } = await db.from('responsepage').insert([{ message: 'message'}]);
     if (error) {
         console.error(error);
         return;
@@ -42,6 +42,8 @@ async function create(){
 
     document.querySelector("#item").innerHTML = "";
 }
+/*Delete-Btn*/
+
 async function deleteItem(id) {
     const {error} = await db
         .from('responsepage')
@@ -52,6 +54,7 @@ async function deleteItem(id) {
     }
     load()
 }
+/*update*/
 
 async function updateItem(id) {
     const {error} = await db
@@ -63,10 +66,11 @@ async function updateItem(id) {
     }
     load();
 }
-/**/
+/*Event Submit*/
 document.querySelector("#review").addEventListener("submit", async (e) => {
     e.preventDefault();
 
+    /*consts*/
     const likedVal = document.querySelector("#liked-input");
     const comeBackVal = document.querySelector("#comeback-input");
     const message = document.querySelector("#msg-input");
@@ -79,12 +83,31 @@ document.querySelector("#review").addEventListener("submit", async (e) => {
         alert("Error: " + error.message);
         return;
     };
-    
+    /*Reset values*/
     document.querySelector("#liked-input").value = "";
     document.querySelector("#comeback-input").value = "";
     document.querySelector("#msg-input").value = "";
     /*Load*/
     load();
 });
+
+/*Values*/
+const likeCount = document.querySelector("#like-Count");
+let likes = 0;
+
+/*Like btn*/
+document.querySelector("#like-btn").addEventListener("click", () => {
+
+    /*Add one to likes*/
+    likes++;
+    /*print likes*/
+    likeCount.textContent = `We have ${likes} likes`
+
+    /*Load*/
+    load()
+})
+
+
+
 /*Load*/
 load();
