@@ -70,7 +70,7 @@ async function updateItem(id) {
 document.querySelector("#review").addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    /*consts*/
+    /*consts.*/
     const likedVal = document.querySelector("#liked-input");
     const comeBackVal = document.querySelector("#comeback-input");
     const message = document.querySelector("#msg-input");
